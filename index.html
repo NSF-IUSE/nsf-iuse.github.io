@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>NSF IUSE Projects</title>
+</head>
+<body>
+<div class="bg-white">
+  <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5">
+          <span class="sr-only">NSF IUSE</span>
+          <img class="h-16 w-auto" src="img/nsf.png" alt="">
+        </a>
+      </div>
+      <div class="flex lg:hidden">
+        <button id="open-menu" type="button"
+                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+               aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="#about" class="text-sm font-semibold leading-6 text-gray-900">About</a>
+        <a href="#projects" class="text-sm font-semibold leading-6 text-gray-900">Course Projects</a>
+        <a href="#publications" class="text-sm font-semibold leading-6 text-gray-900">Publications</a>
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact Us <span
+            aria-hidden="true">&rarr;</span></a>
+      </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div id="mobile-menu" class="hidden lg:hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-50"></div>
+      <div
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">NSF IUSE Projects</span>
+            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                 alt="">
+          </a>
+          <button id="close-menu" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                 aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a href="#about"
+                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+              <a href="#projects"
+                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Course
+                Projects</a>
+              <a href="#publications"
+                 class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Publications</a>
+            </div>
+            <div class="py-6">
+              <a href="#"
+                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact
+                Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+         aria-hidden="true">
+      <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+    <div class="mx-auto max-w-2xl pt-32 sm:py-48 lg:py-56">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">NSF IUSE Project</h1>
+        <p class="mt-6 text-lg leading-8 text-gray-600"><i>Supporting Project-Based Learning in Undergraduate Software
+          Engineering Courses:</i> This project aims to serve the national interest by increasing the use of
+          evidence-based teaching practices in undergraduate computer science curricula. One such practice is
+          project-based learning, which gives students opportunities to learn as they work on authentic real-world
+          problems</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#projects"
+             class="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+            See Course Projects</a>
+        </div>
+      </div>
+    </div>
+    <div
+        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+        aria-hidden="true">
+      <div
+          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+  </div>
+
+  <div id="about" class="mx-auto max-w-2xl lg:max-w-7xl px-6">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">About</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        Project-based learning, and other active learning practices, have been shown to increase student motivation and
+        engagement, raise exam performance, and reduce failure rates. A major barrier to implementing project-based
+        learning in the classroom is that instructors must provide students with the support they need to be successful
+        learners as they complete project tasks. Without that support, students can get bogged down performing
+        unessential tasks instead of learning the targeted concepts and skills. This project aims to increase the use of
+        project-based learning in software engineering courses. To do so, the project will design, develop, and evaluate
+        a reference software engineering course with a repository of twelve ready-to-use projects and associated active
+        learning activities. These resources will enable instructors to easily assign project tasks for students to
+        complete at home. It is anticipated that these resources will increase the capacity of instructors to
+        effectively use project-based learning in their courses. In addition, project-based learning can help students
+        prepare for industry careers by providing learning experiences that are like the work that software engineers
+        do.
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        The overarching goal of this project is to increase student learning by encouraging and facilitating authentic
+        computer science learning experiences. Data for formative evaluation of the developed project-based learning
+        resources will be gathered through advisory board reviews, undergraduate beta testing, and in-house classroom
+        trials. Field tests at multiple volunteer sites will assess the feasibility of implementing the project-based
+        learning resources in college or university settings. Finally, a pilot study will be performed to assess the
+        promise of the developed materials to improve student learning outcomes. The NSF IUSE: EHR Program supports
+        research and development projects to improve the effectiveness of STEM education for all students. This project
+        is in the Engaged Student Learning track, through which the IUSE program supports the creation, exploration, and
+        implementation of promising practices and tools.
+      </p>
+    </div>
+  </div>
+
+  <div id="projects" class="mx-auto max-w-2xl  px-6 lg:max-w-7xl ">
+    <div class="text-center">
+      <h2 class="text-4xl mt-16 font-bold tracking-tight text-gray-900 sm:text-6xl">Course Projects</h2>
+    </div>
+
+    <div id="breached" class="pt-14">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8 mt-10">
+        <div>
+          <h3 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Project Breached</h3>
+          <p class="mt-4 text-gray-500">
+            In this project, students will develop a secure web service to check if an email and password pair appear in
+            a breached database. The project has two parts: loading hashed email and password pairs into a database, and
+            creating a Flask-based website for users to verify their credentials securely. This project focuses on data
+            security, cryptographic hashing, secure database management, and web development, providing students with
+            practical experience in cybersecurity and ethical data handling.
+          </p>
+        </div>
+
+        <div class="">
+          <img src="img/breached.png" width="200px"
+               class="rounded-lg bg-gray-100">
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-3 sm:gap-y-4 lg:gap-x-8 mt-2">
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Project Type</dt>
+          <dd class="mt-2 text-sm text-gray-500">Greenfield</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Tasks Type</dt>
+          <dd class="mt-2 text-sm text-gray-500">2 parts that build on one another
+          </dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Technologies</dt>
+          <dd class="mt-2 text-sm text-gray-500">MySQL, Python, Flask</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Target Students</dt>
+          <dd class="mt-2 text-sm text-gray-500">3rd, and 4th year undergraduates students</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Target Courses</dt>
+          <dd class="mt-2 text-sm text-gray-500">Database, Cryptography, and Web development courses</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Project Duration</dt>
+          <dd class="mt-2 text-sm text-gray-500">A medium-scale project with a duration of about 3-8 weeks</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div id="tictactoe" class="pt-14">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8 mt-10">
+        <div>
+          <h3 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Distributed TicTacToe (DT3)
+            Project</h3>
+          <p class="mt-4 text-gray-500">
+            This project is the design and implementation of a distributed TicTacToe game (DT3), that uses Socket
+            programming to implement the common Client-Server model. The game allows players to register on an Android
+            device, log in to their account, pair with other online players, and play the game. All game interactions
+            between players go through the socket server. The socket server uses an embedded, lightweight database
+            management system SQLite to track users and gaming information
+          </p>
+        </div>
+
+        <div class="">
+          <img src="img/tictactoe.png" width="200px"
+               class="rounded-lg bg-gray-100">
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-3 sm:gap-y-4 lg:gap-x-8 mt-2">
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Project Type</dt>
+          <dd class="mt-2 text-sm text-gray-500">Brownfield</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Tasks Type</dt>
+          <dd class="mt-2 text-sm text-gray-500">4 Milestones that build on one another
+          </dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Technologies</dt>
+          <dd class="mt-2 text-sm text-gray-500">Java, Android, SQLite, Socket Programming</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Target Students</dt>
+          <dd class="mt-2 text-sm text-gray-500">2nd, 3rd, and 4th year undergraduates students.</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Target Courses</dt>
+          <dd class="mt-2 text-sm text-gray-500">Advanced programming, Software development, and Networking courses</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Project Duration</dt>
+          <dd class="mt-2 text-sm text-gray-500">A large-scale project with a duration of about 8-13 weeks</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div id="gpu" class="pt-14">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8 mt-10">
+        <div>
+          <h3 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Project GPU</h3>
+          <p class="mt-4 text-gray-500">
+            In this project, students will use GPU programming to implement parallel processing to efficiently speed up
+            heavy-computing tasks when manipulating millions of pixels.
+          </p>
+        </div>
+
+        <div class="">
+          <img src="img/gpu.png" width="200px"
+               class="rounded-lg bg-gray-100">
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-3 sm:gap-y-4 lg:gap-x-8 mt-2">
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Project Type</dt>
+          <dd class="mt-2 text-sm text-gray-500">Greenfield</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Tasks Type</dt>
+          <dd class="mt-2 text-sm text-gray-500">4 Milestones that build on one another
+          </dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Technologies</dt>
+          <dd class="mt-2 text-sm text-gray-500">Java, Android, SQLite, Socket Programming</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Target Students</dt>
+          <dd class="mt-2 text-sm text-gray-500">2nd, 3rd, and 4th year undergraduates students.</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Target Courses</dt>
+          <dd class="mt-2 text-sm text-gray-500">Advanced programming, Software development, and Networking courses</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Project Duration</dt>
+          <dd class="mt-2 text-sm text-gray-500">A large-scale project with a duration of about 8-13 weeks</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div id="mango" class="pt-14">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8 mt-10">
+        <div>
+          <h3 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Moodle Project</h3>
+          <p class="mt-4 text-gray-500">Moodle is a free and open-source learning management system. Moodle is used for
+            blended learning, distance education, flipped classroom and other online learning projects in schools,
+            universities, workplaces and other sectors</p>
+        </div>
+
+        <div class="">
+          <img src="img/moodle.png" width="300px"
+               class="rounded-lg bg-gray-100">
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-3 sm:gap-y-4 lg:gap-x-8 mt-2">
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Project Type</dt>
+          <dd class="mt-2 text-sm text-gray-500">Brownfield - Open Source</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Tasks Type</dt>
+          <dd class="mt-2 text-sm text-gray-500">7 Independent Feature Requests
+          </dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Technologies</dt>
+          <dd class="mt-2 text-sm text-gray-500">Web, PHP, JavaScript, Behat</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Target Students</dt>
+          <dd class="mt-2 text-sm text-gray-500">3rd, and 4th year undergraduates students</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Target Courses</dt>
+          <dd class="mt-2 text-sm text-gray-500">Software engineering, and Web development courses</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Project Duration</dt>
+          <dd class="mt-2 text-sm text-gray-500">A large-scale project with a duration of about 8-14 weeks</dd>
+        </div>
+      </dl>
+    </div>
+
+    <div id="moodle" class="pt-14">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8 mt-10">
+        <div>
+          <h3 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Moodle Project</h3>
+          <p class="mt-4 text-gray-500">Moodle is a free and open-source learning management system. Moodle is used for
+            blended learning, distance education, flipped classroom and other online learning projects in schools,
+            universities, workplaces and other sectors</p>
+        </div>
+
+        <div class="">
+          <img src="img/moodle.png" width="300px"
+               class="rounded-lg bg-gray-100">
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-3 sm:gap-y-4 lg:gap-x-8 mt-2">
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Project Type</dt>
+          <dd class="mt-2 text-sm text-gray-500">Brownfield - Open Source</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Tasks Type</dt>
+          <dd class="mt-2 text-sm text-gray-500">7 Independent Feature Requests
+          </dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Technologies</dt>
+          <dd class="mt-2 text-sm text-gray-500">Web, PHP, JavaScript, Behat</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Target Students</dt>
+          <dd class="mt-2 text-sm text-gray-500">3rd, and 4th year undergraduates students</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Target Courses</dt>
+          <dd class="mt-2 text-sm text-gray-500">Software engineering, and Web development courses</dd>
+        </div>
+        <div class="border-t border-gray-200 pt-4">
+          <dt class="font-medium text-gray-900">Project Duration</dt>
+          <dd class="mt-2 text-sm text-gray-500">A large-scale project with a duration of about 8-14 weeks</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <div id="publications" class="mx-auto py-32 max-w-2xl px-6 lg:max-w-7xl">
+    <div class="">
+      <h2 class="text-4xl mt-16 font-bold tracking-tight text-gray-900 sm:text-6xl text-center">Publications</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        [3] Suleiman, Ahmad D. and Hou, Daqing and Liu, Yu and DeWaters, Jan and Small, Mary M and de Souza, Juliana G
+        and Shepherd, David "Mapping Learning Objectives of Project-Based Undergraduate Software Engineering Courses to
+        CC2020 Competency Model" , 2023
+        <a href="https://doi.org/10.1109/FIE58773.2023.10342967">https://doi.org/10.1109/FIE58773.2023.10342967</a>
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        [2] Hou, Daqing and DeWaters, Jan and Small, Mary Margaret and Liu, Yu and Shepherd, David "The 2023 DREE
+        Workshop on Designing and Running Project-Based Courses in Software Engineering Education" , 2023
+        <a href="https://doi.org/10.1109/FIE58773.2023.10342986">https://doi.org/10.1109/FIE58773.2023.10342986</a>
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        [1] De Souza, Juliana Goncalves and Flavell, Mikaila and Suleiman, Ahmad Daudu and Shepherd, David and DeWaters,
+        Jan and Small, Mary Margaret and Liu, Yu and Hou, Daqing "The Importance of Project-Scale Scaffolding for
+        Retention and Experience in Computing Courses" , 2023
+        <a href="https://doi.org/10.1109/FIE58773.2023.10343225">https://doi.org/10.1109/FIE58773.2023.10343225</a>
+      </p>
+    </div>
+  </div>
+</div>
+<script>
+    const openMenuButton = document.getElementById('open-menu');
+    const closeMenuButton = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    openMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+    });
+
+    closeMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
+</script>
+</body>
+</html>
