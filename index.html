@@ -4,7 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
-  <title>NSF IUSE Projects</title>
+  <title>NSF DUE-2111318 / DUE-2515174: Collaborative Research</title>
+  <style>
+    .hero-section {
+      padding: 7.5rem 1.5rem 4rem;
+    }
+
+    .hero-content {
+      max-width: 42rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-title {
+      font-size: clamp(1.75rem, 8vw, 2.75rem);
+      line-height: 1.1;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.25rem, 5.5vw, 2rem);
+      line-height: 1.2;
+    }
+
+    .hero-description {
+      font-size: 1rem;
+      line-height: 1.75rem;
+    }
+
+    .doi-link {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .pdf-button,
+    .pdf-unavailable {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 0.375rem;
+      font-size: 0.875rem;
+      font-weight: 700;
+      line-height: 1.25rem;
+      vertical-align: baseline;
+      text-decoration: none;
+    }
+
+    .pdf-button {
+      background: #d0021b;
+      color: #fff;
+      box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    }
+
+    .pdf-button:hover {
+      background: #a40016;
+    }
+
+    .pdf-unavailable {
+      background: #f3f4f6;
+      color: #374151;
+    }
+
+    @media (min-width: 640px) {
+      .hero-section {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+      }
+
+      .hero-description {
+        font-size: 1.125rem;
+        line-height: 2rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 14rem;
+        padding-bottom: 14rem;
+      }
+    }
+  </style>
 </head>
 <body>
 <div class="bg-white">
@@ -33,7 +114,7 @@
         <a href="#publications" class="text-sm font-semibold leading-6 text-gray-900">Publications</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact Us <span
+        <a href="#contact" class="text-sm font-semibold leading-6 text-gray-900">Contact Us <span
             aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
@@ -69,7 +150,7 @@
                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Publications</a>
             </div>
             <div class="py-6">
-              <a href="#"
+              <a href="#contact"
                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact
                 Us</a>
             </div>
@@ -79,19 +160,19 @@
     </div>
   </header>
 
-  <div class="relative isolate px-6 pt-14 lg:px-8">
+  <div class="hero-section relative isolate">
     <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
          aria-hidden="true">
       <div
           class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
-    <div class="mx-auto max-w-2xl pt-32 sm:py-48 lg:py-56">
+    <div class="hero-content">
       <div class="text-center">
-        <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">NSF IUSE Project</h1>
-        <p class="mt-6 text-lg leading-8 text-gray-600"><i>Supporting Project-Based Learning in Undergraduate Software
-          Engineering Courses:</i> This project aims to serve the national interest by increasing the use of
-          evidence-based teaching practices in undergraduate computer science curricula. One such practice is
+        <h1 class="hero-title font-bold tracking-tight text-gray-900">NSF DUE-2111318 / DUE-2515174: Collaborative Research</h1>
+        <p class="hero-subtitle mt-6 font-semibold text-gray-700">Supporting Project-Based Learning in Undergraduate Software Engineering Courses</p>
+        <p class="hero-description mt-6 text-gray-600">This project aims to serve the national interest by increasing
+          the use of evidence-based teaching practices in undergraduate computer science curricula. One such practice is
           project-based learning, which gives students opportunities to learn as they work on authentic real-world
           problems</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
@@ -655,43 +736,140 @@
     <div class="">
       <h2 class="text-4xl mt-16 font-bold tracking-tight text-gray-900 sm:text-6xl text-center">Publications</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">
-        [7] (Accepted) Ahmad D. Suleiman, Daqing Hou, Yu Liu, Jan DeWaters, David C Shepherd, and Juliana G de Souza. 2025.
-          Systematic Literature Review on Project-Based Learning in Computing Education. ACM Trans. Comput. Educ. 56 pages.
+        [9] Suleiman, A. D., Hou, D., &amp; Raida, M. N. (2026).
+        "LLM-Generated Design Problems for Higher-Order Thinking Assessment in Project-Based Learning."
+        SIGCSE-V. (Accepted)
+        <span class="pdf-unavailable">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <path d="M14 2v6h6"></path>
+            <path d="M8 15h8"></path>
+            <path d="M8 18h5"></path>
+          </svg>
+          PDF forthcoming
+        </span>
       </p>
       <p class="mt-6 text-lg leading-8 text-gray-600">
-        [6] (Accepted) Suleiman, Ahmad D., Yiming Tang, and Daqing Hou. 
-        "Factors Impacting Faculty Adoption of Project-Based Learning in Computing Education: a Survey"
-        In 2024 IEEE Frontiers in Education Conference (FIE), pp. 1-9. IEEE, 2025.
+        [8] Suleiman, A. D., DeWaters, J., Shepherd, D., Korkmaz, T., Hussain, F., Liu, Y., &amp; Hou, D. (2026).
+        "Adoption-Ready Project-Based Learning for Computing Education: The FORAP Framework and a Multi-Scale Project Portfolio."
+        IEEE Frontiers in Education (FIE). (Accepted)
+        <span class="pdf-unavailable">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <path d="M14 2v6h6"></path>
+            <path d="M8 15h8"></path>
+            <path d="M8 18h5"></path>
+          </svg>
+          PDF forthcoming
+        </span>
       </p>
       <p class="mt-6 text-lg leading-8 text-gray-600">
-        [5] Suleiman, Ahmad D., David Shepherd, Jan DeWaters, Yu Liu, and Daqing Hou. 
+        [7] Suleiman, A. D., Hou, D., Liu, Y., DeWaters, J., Shepherd, D. C., &amp; de Souza, J. G. (2025).
+        "Systematic Literature Review on Project-Based Learning in Computing Education."
+        ACM Transactions on Computing Education, 25(4), 1-53.
+        <a href="https://doi.org/10.1145/3743684" class="doi-link">https://doi.org/10.1145/3743684</a>
+        <a href="https://dl.acm.org/doi/pdf/10.1145/3743684" class="pdf-button" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <path d="M14 2v6h6"></path>
+            <path d="M8 15h8"></path>
+            <path d="M8 18h5"></path>
+          </svg>
+          PDF
+        </a>
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        [6] Suleiman, A. D., Tang, Y., &amp; Hou, D. (2025).
+        "Factors Impacting Faculty Adoption of Project-Based Learning in Computing Education: a Survey."
+        arXiv.
+        <a href="https://doi.org/10.48550/arXiv.2507.18039" class="doi-link">https://doi.org/10.48550/arXiv.2507.18039</a>
+        <a href="https://arxiv.org/pdf/2507.18039" class="pdf-button" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <path d="M14 2v6h6"></path>
+            <path d="M8 15h8"></path>
+            <path d="M8 18h5"></path>
+          </svg>
+          PDF
+        </a>
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        [5] Suleiman, A. D., Shepherd, D., DeWaters, J., Liu, Y., &amp; Hou, D. (2024).
         "Providing Technical Support to Sustain Student Motivation and Engagement in Software Engineering Project-Based Learning."
-        In 2024 IEEE Frontiers in Education Conference (FIE), pp. 1-9. IEEE, 2024.
-        
-        <a href="https://doi.org/10.1109/FIE61694.2024.10893063">https://doi.org/10.1109/FIE61694.2024.10893063</a>
+        In 2024 IEEE Frontiers in Education Conference (FIE), 1-9.
+        <a href="https://doi.org/10.1109/FIE61694.2024.10893063" class="doi-link">https://doi.org/10.1109/FIE61694.2024.10893063</a>
+        <a href="https://par.nsf.gov/servlets/purl/10581777" class="pdf-button" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <path d="M14 2v6h6"></path>
+            <path d="M8 15h8"></path>
+            <path d="M8 18h5"></path>
+          </svg>
+          PDF
+        </a>
       </p>
       <p class="mt-6 text-lg leading-8 text-gray-600">
-        [4] Suleiman, Ahmad D., Jan DeWaters, Daqing Hou, Yu Liu, and David Shepherd. 
+        [4] Suleiman, A. D., DeWaters, J., Hou, D., Liu, Y., &amp; Shepherd, D. (2024).
         "An Exploratory Comparative Study on the Impacts of Technical Support on Student Successes in Computing Project-Based Learning."
-         In 2024 IEEE Frontiers in Education Conference (FIE), pp. 1-9. IEEE 2024.
-        <a href="https://doi.org/10.1109/FIE61694.2024.10893440">https://doi.org/10.1109/FIE61694.2024.10893440</a>
+        In 2024 IEEE Frontiers in Education Conference (FIE), 1-9.
+        <a href="https://doi.org/10.1109/FIE61694.2024.10893440" class="doi-link">https://doi.org/10.1109/FIE61694.2024.10893440</a>
+        <a href="https://par.nsf.gov/servlets/purl/10581776" class="pdf-button" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <path d="M14 2v6h6"></path>
+            <path d="M8 15h8"></path>
+            <path d="M8 18h5"></path>
+          </svg>
+          PDF
+        </a>
       </p>
       <p class="mt-6 text-lg leading-8 text-gray-600">
-        [3] Suleiman, Ahmad D. and Hou, Daqing and Liu, Yu and DeWaters, Jan and Small, Mary M and de Souza, Juliana G
-        and Shepherd, David "Mapping Learning Objectives of Project-Based Undergraduate Software Engineering Courses to
-        CC2020 Competency Model" , 2023
-        <a href="https://doi.org/10.1109/FIE58773.2023.10342967">https://doi.org/10.1109/FIE58773.2023.10342967</a>
+        [1] Hou, D., DeWaters, J., Small, M. M., Liu, Y., &amp; Shepherd, D. (2023).
+        "The 2023 DREE Workshop on Designing and Running Project-Based Courses in Software Engineering Education."
+        In 2023 IEEE Frontiers in Education Conference (FIE), 1-2.
+        <a href="https://doi.org/10.1109/FIE58773.2023.10342986" class="doi-link">https://doi.org/10.1109/FIE58773.2023.10342986</a>
       </p>
       <p class="mt-6 text-lg leading-8 text-gray-600">
-        [2] Hou, Daqing and DeWaters, Jan and Small, Mary Margaret and Liu, Yu and Shepherd, David "The 2023 DREE
-        Workshop on Designing and Running Project-Based Courses in Software Engineering Education" , 2023
-        <a href="https://doi.org/10.1109/FIE58773.2023.10342986">https://doi.org/10.1109/FIE58773.2023.10342986</a>
+        [2] Suleiman, A. D., Hou, D., Liu, Y., DeWaters, J., Small, M. M., de Souza, J. G., &amp; Shepherd, D. (2023).
+        "Mapping Learning Objectives of Project-Based Undergraduate Software Engineering Courses to CC2020 Competency Model."
+        In 2023 IEEE Frontiers in Education Conference (FIE), 1-8.
+        <a href="https://doi.org/10.1109/FIE58773.2023.10342967" class="doi-link">https://doi.org/10.1109/FIE58773.2023.10342967</a>
+        <a href="https://par.nsf.gov/servlets/purl/10501932" class="pdf-button" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <path d="M14 2v6h6"></path>
+            <path d="M8 15h8"></path>
+            <path d="M8 18h5"></path>
+          </svg>
+          PDF
+        </a>
       </p>
       <p class="mt-6 text-lg leading-8 text-gray-600">
-        [1] De Souza, Juliana Goncalves and Flavell, Mikaila and Suleiman, Ahmad Daudu and Shepherd, David and DeWaters,
-        Jan and Small, Mary Margaret and Liu, Yu and Hou, Daqing "The Importance of Project-Scale Scaffolding for
-        Retention and Experience in Computing Courses" , 2023
-        <a href="https://doi.org/10.1109/FIE58773.2023.10343225">https://doi.org/10.1109/FIE58773.2023.10343225</a>
+        [3] de Souza, J. G., Flavell, M., Suleiman, A. D., Shepherd, D., DeWaters, J., Small, M. M., Liu, Y., &amp; Hou, D. (2023).
+        "The Importance of Project-Scale Scaffolding for Retention and Experience in Computing Courses."
+        In 2023 IEEE Frontiers in Education Conference (FIE), 1-9.
+        <a href="https://doi.org/10.1109/FIE58773.2023.10343225" class="doi-link">https://doi.org/10.1109/FIE58773.2023.10343225</a>
+        <a href="https://drive.google.com/file/u/0/d/1hFCp6jduKhSC_pd39J8Wj5GjulAWOOxm/view" class="pdf-button" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <path d="M14 2v6h6"></path>
+            <path d="M8 15h8"></path>
+            <path d="M8 18h5"></path>
+          </svg>
+          PDF
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div id="contact" class="mx-auto max-w-2xl px-6 lg:max-w-7xl" style="padding-top: 3rem; padding-bottom: 8rem;">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Contact Us</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+        The course projects are freely available to qualified higher-ed instructors.<br>
+        To request access, contact Dr.
+        Daqing Hou by email:
+        <a href="mailto:dqvse@rit.edu" class="font-semibold text-green-600 hover:text-green-800">dqvse@rit.edu</a>
       </p>
     </div>
   </div>
